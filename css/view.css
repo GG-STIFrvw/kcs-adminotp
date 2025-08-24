@@ -1,0 +1,209 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header .back-link {
+    color: white;
+    text-decoration: none;
+    background-color: #007bff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.header .back-link:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.container h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.quote-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    overflow: hidden; /* Ensures the border-left is contained */
+    border-left: 5px solid #007bff; /* Default blue for pending */
+}
+
+.quote-card.status-accepted {
+    border-left-color: #28a745; /* Green for accepted */
+}
+
+.quote-card.status-declined {
+    border-left-color: #dc3545; /* Red for declined */
+}
+
+.quote-content {
+    padding: 20px;
+}
+
+.quote-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.quote-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.quote-status {
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 15px;
+    color: white;
+    font-size: 14px;
+}
+
+.status-pending {
+    background-color: white;
+}
+
+.status-accepted {
+    background-color: #28a745;
+}
+
+.status-declined {
+    background-color: #dc3545;
+}
+
+.quote-body p {
+    margin: 5px 0 15px;
+    color: #555;
+}
+
+.quote-body strong {
+    color: #333;
+}
+
+.product-list {
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.product-list h4 {
+    margin-top: 0;
+    color: #333;
+}
+
+.product-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.product-list li:last-child {
+    border-bottom: none;
+}
+
+.quote-actions {
+    margin-top: 20px;
+}
+
+.quote-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.accept-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.accept-btn:hover {
+    background-color: #218838;
+}
+
+.decline-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.decline-btn:hover {
+    background-color: #c82333;
+}
+
+.decline-note {
+    margin-top: 15px;
+    display: none;
+}
+
+.decline-note textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.decline-note .confirm-decline-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.decline-note .confirm-decline-btn:hover {
+    background-color: #c82333;
+}
+
+.decline-reason {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.message {
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: #17a2b8;
+    text-align: center;
+    margin-bottom: 20px;
+}
